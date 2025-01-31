@@ -1,7 +1,10 @@
 import { updateDigitalClock } from './digital-clock.js';
-import { updateAnalogClock } from './analog-clock.js';
+import { updateAnalogClock, renderClockMarkers } from './analog-clock.js';
 
 function initializeClock() {
+    // Render clock markers
+    renderClockMarkers();
+
     // Update clocks immediately
     updateDigitalClock();
     updateAnalogClock();
