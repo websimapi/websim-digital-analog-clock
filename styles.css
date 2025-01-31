@@ -12,27 +12,25 @@ body {
 }
 
 .digital-clock-container {
-    background: #333;
-    border-radius: 15px;
-    padding: 20px 40px;
+    background: white;
+    border-radius: 5px;
+    padding: 10px 20px;
     margin-bottom: 30px;
     display: inline-block;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3),
-                inset 0 0 15px rgba(0,0,0,0.5);
-    border: 2px solid #222;
+    border: 1px solid #333;
 }
 
 .digital-clock {
-    font-size: 3rem;
-    color: #0fdd0f;
-    font-family: 'Digital', 'Courier New', Courier, monospace;
-    text-shadow: 0 0 5px rgba(15, 221, 15, 0.7);
+    font-size: 2rem;
+    color: #000;
+    font-family: Arial, sans-serif;
+    display: inline-block;
 }
 
 .period-indicator {
-    font-size: 1.5rem;
-    color: #0fdd0f;
-    margin-left: 10px;
+    font-size: 1rem;
+    color: #000;
+    margin-left: 5px;
 }
 
 .analog-clock {

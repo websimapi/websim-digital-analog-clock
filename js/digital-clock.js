@@ -12,8 +12,7 @@ export function updateDigitalClock() {
     
     const digitalClockElement = document.getElementById('digital-clock');
     const timeString = `${hours}:${minutes}:${seconds}`;
-    const periodElement = document.querySelector('.period-indicator');
     
     digitalClockElement.textContent = timeString;
-    periodElement.textContent = period;
+    document.querySelector('.period-indicator').textContent = period;
 }
