@@ -11,10 +11,33 @@ body {
     text-align: center;
 }
 
+.digital-clock-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 .digital-clock {
     font-size: 3rem;
     margin-bottom: 20px;
     color: #333;
+}
+
+.time-format-toggle {
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s ease;
+}
+
+.time-format-toggle:hover {
+  transform: scale(1.1);
+}
+
+.time-format-toggle svg {
+  width: 24px;
+  height: 24px;
 }
 
 .analog-clock {
@@ -51,7 +74,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-}
+)
 
 
 

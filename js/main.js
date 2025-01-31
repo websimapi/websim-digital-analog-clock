@@ -1,4 +1,4 @@
-import { updateDigitalClock } from './digital-clock.js';
+import { updateDigitalClock, toggleTimeFormat } from './digital-clock.js';
 import { updateAnalogClock, renderClockMarkers } from './analog-clock.js';
 
 function initializeClock() {
@@ -14,6 +14,10 @@ function initializeClock() {
         updateDigitalClock();
         updateAnalogClock();
     }, 1000);
+
+    // Add click handler for time format toggle
+    const toggleButton = document.getElementById('time-format-toggle');
+    toggleButton.addEventListener('click', toggleTimeFormat);
 }
 
 // Initialize the clock when the page loads
